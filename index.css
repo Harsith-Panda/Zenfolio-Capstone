@@ -102,7 +102,7 @@ nav a{
     color: #777;
 }
 
-/* 2-columns */
+/* 2-columns change */
 @media (max-width: 768px) {
     .grid-item {
         flex: 1 1 calc(50% - 20px); 
