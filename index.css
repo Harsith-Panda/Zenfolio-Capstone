@@ -28,9 +28,28 @@ body{
     cursor: pointer;
 }
 
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Visible State when 'active' is added */
+.nav-links.active {
+    display: flex;
+}
+
 @media (max-width: 768px) {
-    nav {
-        display: none; /* Hide the links by default */
+    .nav-links {
+        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -44,12 +63,12 @@ body{
     }
 
     .menu-toggle {
-        display: block; /* Show the hamburger menu button */
+        display: block;
         color: #333;
     }
 
     /* Show nav-links when the menu is toggled */
-    nav.active {
+    .nav-links.active {
         display: flex;
     }
 }
@@ -191,7 +210,7 @@ nav a{
 }
 
 .fourth-section {
-    font-family: Arial, sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
     background-color: #ECF6FE;
     display: flex;
     flex-direction: column;
@@ -211,6 +230,7 @@ nav a{
     width: 60px;
     height: 60px;
     border: 2px solid #381664;
+    font-family: 'Familjen Grotesk',sans-serif;
     border-radius: 8px;
     text-align: center;
     font-size: 24px;
@@ -221,6 +241,7 @@ nav a{
 
 .input-box::placeholder{
     color: #381664;
+    font-family: 'Familjen Grotesk',sans-serif;
 }
 
 .input-box:focus {
