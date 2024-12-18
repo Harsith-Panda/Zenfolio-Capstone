@@ -63,11 +63,12 @@ nav a{
 }
 
 .second-section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
     padding: 20px;
+    justify-content: center;
+    align-items: start;
 }
 
 .grid-item {
@@ -76,8 +77,6 @@ nav a{
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 300px;
-    flex: 1 1 calc(33.333% - 20px);
 }
 
 .grid-item img {
@@ -100,20 +99,6 @@ nav a{
 .grid-item-content p {
     font-size: 14px;
     color: #777;
-}
-
-/* 2-columns change */
-@media (max-width: 768px) {
-    .grid-item {
-        flex: 1 1 calc(50% - 20px); 
-    }
-}
-
-/* 1-columns */
-@media (max-width: 480px) {
-    .grid-item {
-        flex: 1 1 100%;
-    }
 }
 
 .About {
