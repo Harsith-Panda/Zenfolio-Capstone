@@ -19,6 +19,41 @@ body{
     color: #381664;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: 2px solid #381664;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-toggle {
+        display: block; /* Show the hamburger menu button */
+        color: #333;
+    }
+
+    /* Show nav-links when the menu is toggled */
+    nav.active {
+        display: flex;
+    }
+}
+
 .bar{
     display: flex;
     justify-content: space-between;
