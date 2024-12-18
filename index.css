@@ -64,7 +64,7 @@ nav a{
 
 .second-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     justify-content: center;
@@ -99,6 +99,19 @@ nav a{
 .grid-item-content p {
     font-size: 14px;
     color: #777;
+}
+
+@media (max-width: 768px) {
+    .second-section {
+        grid-template-columns: repeat(2, 1fr); /* Smaller minimum column width */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .second-section {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    }
 }
 
 .About {
