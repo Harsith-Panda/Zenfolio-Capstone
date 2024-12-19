@@ -21,6 +21,30 @@ body{
     margin-left: 24px;
 }
 
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+  
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #381664;
+    transition: width 0.3s ease;
+}
+  
+.nav-links a:hover {
+    color: #440A8F;
+}
+  
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 /*.menu-toggle {
     display: none;
     font-size: 24px;
