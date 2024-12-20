@@ -85,10 +85,10 @@ nav a:hover {
     margin-right: 17px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     nav {
-        display: none; /* Hide nav links on smaller screens */
+        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -102,11 +102,11 @@ nav a:hover {
     }
 
     .nav-links.active {
-        display: flex; /* Show nav links when toggle button is clicked */
+        display: flex; 
     }
 
     .menu-toggle {
-        display: block; /* Show the toggle button on smaller screens */
+        display: block;
     }
 }
 
@@ -186,121 +186,6 @@ nav a:hover {
     }
 }
 
-/*.About {
-    font-family: "Syne",sans-serif;
-    font-size: 56px;
-    text-align: center;
-    margin: 10%;
-    color: #381664;
-}
-
-.Contact {
-    font-size: 2.5vw;
-    font-family: "Syne",sans-serif;
-    color: #381664;
-}
-
-.contact {
-    margin: 3% 17%;
-}
-
-.Contact + p {
-    color: #381664;
-}
-
-.header{
-    text-align: center;
-}
-
-.head{
-    font-family: 'Syne',sans-serif;
-    font-size: 3vw;
-    color: #381664;
-    margin-top: 2px;
-    margin-bottom: 0;
-}
-
-.header > p {
-    font-size: 2vw;
-    margin-top: 2px;
-    font-weight: normal;
-    color: #381664;
-}
-
-.fourth-section {
-    font-family: 'Familjen Grotesk', sans-serif;
-    background-color: #ECF6FE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.input-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.input-box {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #381664;
-    font-family: 'Familjen Grotesk',sans-serif;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 24px;
-    color: #381664;
-    font-weight: bold;
-    background-color: #fff;
-}
-
-.input-box::placeholder{
-    color: #381664;
-    font-family: 'Familjen Grotesk',sans-serif;
-}
-
-.input-box:focus {
-    outline: none;
-    border-color: #440A8F;
-    box-shadow: 0 0 8px rgba(68, 10, 143, 0.5);
-}
-
-.submit-btn {
-    width: 80%;
-    max-width: 300px;
-    background-color: #440A8F;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-family: 'Space Mono',sans-serif;
-}
-
-.submit-btn:hover {
-    background-color: #381664;
-}
-
-.skip {
-    font-size: 16px;
-    color: #440A8F;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Space Mono',sans-serif;
-}
-
-.skip:hover {
-    text-decoration: underline;
-}
-    */
-
 .third-section {
     margin-top: 150px;
     display: flex;
@@ -308,19 +193,19 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5% 10%; /* Add padding for spacing */
+    padding: 5% 10%;
 }
 
 .About {
     font-family: "Syne", sans-serif;
-    font-size: 2.5rem; /* Adjusted for responsiveness */
+    font-size: 2.5rem;
     color: #381664;
-    margin-bottom: 20px; /* Space below the heading */
-    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .contact {
-    margin-top: 200px; /* Adjust spacing */
+    margin-top: 200px;
     margin-bottom: 50px;
     align-self: flex-start;
     text-align: left;
@@ -328,17 +213,16 @@ nav a:hover {
 }
 
 .Contact {
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem;
     color: #381664;
     margin-bottom: 10px;
 }
 
 .contact p {
-    font-size: 1rem; /* Smaller font for description */
+    font-size: 1rem;
     color: #381664;
 }
 
-/* Fourth Section Styling */
 .fourth-section {
     margin-top: 70px;
     margin-bottom: 170px;
@@ -414,11 +298,10 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .About {
-        font-size: 1.8rem; /* Smaller font for mobile */
-        padding: 0 5%; /* Adjust side padding */
+        font-size: 1.8rem;
+        padding: 0 5%;
     }
 
     .Contact {
@@ -454,56 +337,55 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #ECF6FE; /* Match the page background color */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 15px; /* Add spacing between items when wrapped */
+    background-color: #ECF6FE;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .copy-right {
     font-family: "Syne", sans-serif;
-    font-size: 1.5rem; /* Adjust font size for desktop */
+    font-size: 1.5rem;
     font-weight: bold;
     color: #381664;
     margin: 0;
 }
 
 .follow {
-    height: auto; /* Adjust height dynamically */
-    padding: 10px 20px; /* Add padding for better button shape */
+    height: auto;
+    padding: 10px 20px;
     border-radius: 8px;
     font-family: "Space Mono", sans-serif;
     font-weight: bold;
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
     border: 2px solid #381664;
     color: #381664;
-    background-color: transparent; /* Transparent background */
+    background-color: transparent;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth hover effect */
+    transition: all 0.3s ease;
 }
 
 .follow:hover {
     background-color: #381664;
-    color: #fff; /* White text on hover */
+    color: #fff;
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
     .end-section {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align in vertical mode */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
     .copy-right {
-        font-size: 1.2rem; /* Slightly smaller text */
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
 
     .follow {
-        font-size: 0.9rem; /* Adjust button size for mobile */
+        font-size: 0.9rem;
         padding: 8px 16px;
-        width: 100%; /* Full-width button for mobile */
-        max-width: 200px; /* Prevent it from being too wide */
+        width: 100%;
+        max-width: 200px;
     }
 }
 
