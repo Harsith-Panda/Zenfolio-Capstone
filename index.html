@@ -7,8 +7,19 @@
         <link rel="stylesheet" href="./index.css">
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                document.querySelector(".menu-toggle").addEventListener("click", function () {
-                    document.querySelector(".nav-links").classList.toggle("active");
+                const menuToggle = document.querySelector(".menu-toggle");
+                const navLinks = document.querySelector(".nav-links");
+
+                // makes toggle-menu active
+                menuToggle.addEventListener("click", function () {
+                    navLinks.classList.toggle("active");
+                });
+
+                // removes active once the user interacts with the nav anchor tag
+                navLinks.querySelectorAll("a").forEach((link) => {
+                    link.addEventListener("click", function () {
+                        navLinks.classList.remove("active");
+                    });
                 });
             });
         </script>
